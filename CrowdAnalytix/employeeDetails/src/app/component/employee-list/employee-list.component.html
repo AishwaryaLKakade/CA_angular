@@ -1,0 +1,23 @@
+<h3>Employees Details</h3>
+<hr>
+<table class="table table-bordered">
+    <tr *ngFor="let ea of emp_array">
+    <td >{{ea.id}}</td>
+    <td >{{ea.name}}</td>
+    <td>{{ea.age}}</td>
+    <td>{{ea.department}}</td>
+    <td>{{ea.blood_group}}</td>
+    <td>{{ea.address}}</td>
+    <td>{{ea.contact_number}}</td>  
+    <button class="btn btn-primary" 
+[routerLink] = "['/edit-employee',ea.id] ">Edit</button>  
+</tr>
+</table>
+
+
+
+<button class="btn btn-primary " (click)="loadMore()"> Load More</button>
+
+
+
+

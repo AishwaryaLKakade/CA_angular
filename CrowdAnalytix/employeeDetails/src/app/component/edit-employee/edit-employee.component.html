@@ -1,0 +1,52 @@
+<form [formGroup]  = "empForm">
+
+    <!-- here formGroup is an expression where as formControlName is property -->
+    <div class="form-group"> 
+        <label> ID* <h6>please enter 3 digits</h6></label>
+        <input class="form-control" formControlName="id">
+    </div>
+    
+    <div  class="form-group"> 
+        <label> Name </label>
+        <input class="form-control" formControlName="name">
+    </div>
+
+    <div  class="form-group"> 
+        <label> Age </label>
+        <input class="form-control" formControlName="age">
+    </div>
+
+
+    <div  class="form-group"> 
+            <label> Department </label>
+            <input class="form-control" formControlName="department">
+        <!-- <label> Department </label>
+        <label><input type="radio" name="department" value="IT" formControlName="department">IT</label>&nbsp;
+        <label><input type="radio" name="department" value="Sales" formControlName="department">Sales</label>&nbsp;
+        <label><input type="radio" name="department" value="HR" formControlName="department">Human Resource</label>&nbsp;
+        <label><input type="radio" name="department" value="Finance" formControlName="department">Finance</label>&nbsp; -->
+    </div>
+
+    <div class="form-group"> 
+        <label> Blood group </label>
+        <input class="form-control" formControlName="blood_group">
+    </div>
+
+    <div class="form-group"> 
+        <label> Address </label>
+        <input class="form-control" formControlName="address">
+    </div>
+
+    <div class="form-group"> 
+        <label> Contact number </label>
+        <input class="form-control" formControlName="contact_number">
+    </div>
+    
+    
+
+        <button class="btn btn-success" (click)="saveChanges()">Save changes </button>
+</form>
+
+<p>
+    {{ empForm.value |json}}
+</p>

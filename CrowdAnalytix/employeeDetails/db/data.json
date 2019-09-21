@@ -1,0 +1,58 @@
+{
+  "employeeJSON": [
+    {
+      "id": "101",
+      "name": "Arjun Bhatia",
+      "age": 25,
+      "department": "IT",
+      "blood_group": "B+",
+      "address": "75 cross KS Layout Bangalore ",
+      "contact_number": 9448617696
+    },
+    {
+      "id": "102",
+      "name": "Lokesh",
+      "age": 55,
+      "department": "HR",
+      "blood_group": "B+",
+      "address": "3rd cross JP Nagar",
+      "contact_number": 94448617696
+    },
+    {
+      "id": "103",
+      "name": "Girija",
+      "age": 52,
+      "department": "HR",
+      "blood_group": "O+",
+      "address": "4th block jaynagar",
+      "contact_number": 9481425306
+    },
+    {
+      "id": "104",
+      "name": "Arpitha",
+      "age": 22,
+      "department": "Sales",
+      "blood_group": "A-",
+      "address": "HRS Layout",
+      "contact_number": 8693478964
+    },
+    {
+      "id": "105",
+      "name": "Narendra",
+      "age": 45,
+      "department": "Civil",
+      "blood_group": "A+",
+      "address": "BDA complex",
+      "contact_number": 7896541236
+    },
+    {
+      "id": "106",
+      "name": "gandhi",
+      "address": "Gujarat",
+      "contact_number": "7569321482",
+      "age": "78",
+      "department": "Sales",
+      "blood_group": "B+"
+    }
+  ]
+}

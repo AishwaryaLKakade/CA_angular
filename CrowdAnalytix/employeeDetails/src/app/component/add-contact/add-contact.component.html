@@ -1,0 +1,54 @@
+<h3> Add a new employee details</h3>
+<p>
+    {{emp | json}}
+</p>
+<hr>
+
+<form class="form" #f1="ngForm">
+    <!-- f1 is form name and allows us to access the form details -->
+
+    <div class="form-group">
+        <label for="id"> Id* <h6>please enter 3 digits</h6></label>
+            <input type="text" class="form-control" id = "id" #id="ngModel"
+            required minlength="2" maxlength="15"
+            name="id" [(ngModel)] ="emp.id">            
+    </div>
+        
+    <div class="form-group">
+        <label for = "name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]= "emp.name">
+    </div>
+
+    <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id = "age" name="age" [(ngModel)]= "emp.age"> 
+    </div>
+
+    <div class="form-group">
+            <label>Department</label><br/>
+            <input type="text" class="form-control" id ="department" name="department" [(ngModel)]= "emp.department"> 
+            <!-- <label><input type="radio" name="department" value = "IT" [(ngModel)]= "emp.department">IT</label>&nbsp;
+            <label><input type="radio" name="department" value = "Sales" [(ngModel)]= "emp.department" >Sales</label> &nbsp;
+            <label><input type="radio" name="department" value = "HR" [(ngModel)]= "emp.department" >Human Resource</label> &nbsp;
+            <label><input type="radio" name="department" value = "Finance" [(ngModel)]= "emp.department">Finance</label> &nbsp; -->
+    </div>
+
+
+    <div class="form-group">
+            <label for="blood_group">Blood Group</label>
+            <input type="text" class="form-control" id = "blood_group" name="blood_group" [(ngModel)]= "emp.blood_group">  
+    </div>
+
+    <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id = "address" name="address" [(ngModel)]= "emp.address"> 
+    </div>
+
+    <div class="form-group">
+            <label for="contact_number">Contact number</label>
+            <input type="text" class="form-control" id = "contact_number"name="contact_number"  [(ngModel)]= "emp.contact_number"> 
+    </div>
+</form>
+<button class="btn btn-{{f1.invalid ? 'danger' : 'primary'}}" [disabled]="f1.invalid" (click)="addEmployee()"> Add</button>
+
+      
